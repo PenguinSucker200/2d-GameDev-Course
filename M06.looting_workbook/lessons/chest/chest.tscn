@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0qtv434qjft1"]
+
+[ext_resource type="Texture2D" uid="uid://c3hwsm5ugp8qw" path="res://lessons/chest/bottom.png" id="1_agokk"]
+[ext_resource type="Texture2D" uid="uid://bnem1cahhoxdk" path="res://lessons/chest/top.png" id="2_8dr3g"]
+[ext_resource type="Texture2D" uid="uid://bu2jin246nel5" path="res://lessons/chest/lock.png" id="3_no4hi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icslm"]
+size = Vector2(97, 79)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Bottom" type="Sprite2D" parent="."]
+position = Vector2(4, -34.5)
+texture = ExtResource("1_agokk")
+
+[node name="Top" type="Sprite2D" parent="."]
+position = Vector2(4, -50)
+texture = ExtResource("2_8dr3g")
+
+[node name="Lock" type="Sprite2D" parent="."]
+position = Vector2(5, -31)
+texture = ExtResource("3_no4hi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.5, -40.5)
+shape = SubResource("RectangleShape2D_icslm")
